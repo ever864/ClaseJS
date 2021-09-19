@@ -21,9 +21,11 @@ class Persona {
   }
 
   nombreCompleto(){
-
     return this._name + ' ' + this._surname;
+  }
 
+  toString(){
+    return this.nombreCompleto();
   }
 }
 
@@ -46,6 +48,8 @@ class Empleado extends Persona {
   nombreCompleto(){
     return super.nombreCompleto() + ' ' + this._departamento
   }
+
+
 
 }
 
